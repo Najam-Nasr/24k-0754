@@ -1,0 +1,40 @@
+PSEUDOCODE
+
+Q. Find the maximum number in any of three variables
+
+Start
+Print "Please write three numbers"
+if  (num1 > num2) and (num1 > num3)
+    print " num1 is greatest"
+End
+Else if (num2 > num1) and (num2 > num3)
+        Print "num2 is greatest
+End
+Else if (num3 > num1) and (num3 > num2)
+        Print "num3 is greatest"
+End
+
+Q. Take three variables as input and add them without using the + operator.
+
+Start
+Print "Print wirte 3 numbers"
+Input num1, num2 , num3
+Sum = num1 + num2 + num3
+Print sum
+End
+
+Q. Create a small calculator which only does '+' or '-' operations.
+
+Start 
+Print "Please write two numbers"
+Input num1, num2
+Print " Do you wanna add or subtract these numbers? Type '+' for addition and '-' for subtraction
+Input operator 
+if  operator == +
+    Sum = num1 + num2 
+    Print sum 
+End 
+Else if operator == - 
+        Difference = num1 + num2 
+        Print difference
+End
