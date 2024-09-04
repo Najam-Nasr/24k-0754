@@ -1,39 +1,47 @@
 ALGORITHM
-Q. Find the maximum number in any of three variables
+
+Q. Implement an algorithm if an Nth is a divisor of an n number (i.e. 2 is a divisor of 6). If so determine if it's an even number or odd number as well
 
 Start
-Print "Please write three numbers"
-if  (num1 > num2) and (num1 > num3)
-    print " num1 is greatest"
-End
-Else if (num2 > num1) and (num2 > num3)
-        Print "num2 is greatest
-End
-Else if (num3 > num1) and (num3 > num2)
-        Print "num3 is greatest"
-End
-
-Q. Take three variables as input and add them without using the + operator.
-
-Start
-Print "Print wirte 3 numbers"
-Input num1, num2 , num3
-Sum = num1 + num2 + num3
-Print sum
-End
-
-Q. Create a small calculator which only does '+' or '-' operations.
-
-Start 
-Print "Please write two numbers"
-Input num1, num2
-Print " Do you wanna add or subtract these numbers? Type '+' for addition and '-' for subtraction
-Input operator 
-if  operator == +
-    Sum = num1 + num2 
-    Print sum 
+Ask user for two number where n is the number to be divided and Nth is the number which we will use to divide n
+Use modulus operator between n and Nth and check the remainder
+If the reminder is 0 then Nth is the divisor of n
+If only the remainder is 0 
+Use modulus operator again but this time between n and 2
+If the remainder is still 0 then the number is even
+Else the number is odd
 End 
-Else if operator == - 
-        Difference = num1 + num2 
-        Print difference
-End
+
+Q. Implement an algorithm where the user enters a number, and an appropriate month is displayed
+
+Start
+Set 1 for JANUARY
+Set 2 for FEBRUARY
+Set 3 for MARCH 
+Set 4 for APRIL
+Set 5 for MAY
+Set 6 for JUNE
+Set 7 for JULY
+Set 8 for AUGUST
+Set 9 for SEPTEMBER
+Set 10 for OCTOBER
+Set 11 for NOVEMBER
+Set 12 for DECEMBER
+Ask user for a number from 1 to 12
+Check the input number
+If the number enter by the user matches the number present in the data then print it's respective month
+Else if ask the user to input another number between 1 to 12
+End 
+
+Q. Implement an algorithm for making a simple calculator with all the operators (+, -, *, /, %)
+
+Start
+Set + for Addition 
+Set - for Subtraction
+Set * for Multiplication
+Set / for Division 
+Set % for Remainder
+Ask user for 2 numbers
+Ask user for the operations he/she wants to perform with the input numbers
+Apply the entered operation on those numbers
+Display the results to the user
