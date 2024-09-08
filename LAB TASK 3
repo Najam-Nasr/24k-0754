@@ -1,0 +1,90 @@
+QUESTION NO 1:
+
+The wrong value is calculated merely due to the fact that the number 3000000000 is too large to be stored within the data type int, hence causing an overflow. In C language int have a range of -2147483648 to 2147483647 (Value taken from Google). Since 3000000000 is larger than this, it goes round the whole cycle into negative and that's why our answer is incorrect. To correct this, a bigger data type should be used.
+
+QUESTION NO 2:
+
+#include<stdio.h>
+main()
+{
+	int a, b, c;
+	printf("Enter n1:");
+	scanf("%d", &a);
+	printf("Enter n2:");
+	scanf("%d", &b);
+	c=a;
+	a=b;
+	b=c;
+	prinf("n1 is: %d", a);
+	prinff("n2 is: %d" ,b);
+}
+
+QUESTION NO 3:
+
+#include <stdio.h>
+main()
+{	
+	int rate;
+	float salary, tax;
+	printf("Enter Tax Rate: ");
+	scanf("%d", &rate);
+	printf("Enter Salary: ");
+	scanf("%f", &salary);
+	tax=salary*(rate/100.0);
+	printf("The Tax Applied is %.3f\n", tax);
+	printf("The salary left after deducting tax is: %.1f", salary-tax);
+}
+
+QUESTION NO 4:
+
+#include <stdio.h>
+main()
+{
+	float fuel_average, cost1, cost2, total_cost, total_fuel,cosumption;
+	printf("Enter fuel avergae of your car:\t");
+	scanf("%f", &fuel_average);
+	total_fuel_consumption= (1207+1207)/fuel_average;
+	printf("The total fuel cosumption is %.03f\n", total_fuel_consumption);
+	cost1=(total_fuel_consumption/2)*118;
+	cost2=(total_fuel_consumption/2)*123;
+	total_cost=cost1+cost2;
+	printf("The total fuel cost (bot ways) is:\t%.3f", total_cost);
+}
+
+QUESTION NO 5:
+
+#include<stdio.h>
+main()
+{
+	float, principle, interest;
+	int rate, time;
+	printf("NOTE:\n");
+	printf("The value of principle must be between 100 to 1,000,000 \n");
+	printf("The rate of interest must be between 5% to 10% \n");
+	printf(The time must be between 1 to 10 years \n");
+	printf("Enter Principle: ");
+	scanf("%f", &principle);
+	if(principle<100 || principle>1000000);
+	printf("The Principle is out of range");
+	printf("Enter rate of interest (not in decimal): ");
+	scanf("%d", &rate);
+	if(rate<5 || rate>10);
+	printf("Interest Rate is out of range);
+	printf("Enter time: ");
+	scanf("%d", &time);
+	if(time<1 || time>10);
+	printf("Time is out of range");
+	Interest=(principle*time*rate)/100;
+	printf("The interest is: %3f", interest);
+}
+
+QUESTION NO 6:
+
+#include<stdio.h>
+main()
+{
+	float m;
+	int x1=5, y1=4, x2=3, y2=2;
+	m= (y2-y1)/(x2-x1);
+	printf("%,3f", m);
+}
